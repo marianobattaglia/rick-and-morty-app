@@ -1,0 +1,21 @@
+query Personajes{
+  characters{
+    results{
+      id
+      name
+      species
+    }
+  }
+}
+
+query getPersonaje($id: ID!){
+  character(id:$id){
+    name
+    species
+    status
+    gender
+    image
+  }
+}
+
+
