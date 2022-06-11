@@ -14,8 +14,7 @@ extension UIViewController {
     
     func showSpinner() {
         aView = UIView(frame: self.view.bounds)
-//        Next line is for put background to the spinner:
-//        aView?.backgroundColor = UIColor.white
+        aView?.backgroundColor = UIColor.white
         
         let ai = UIActivityIndicatorView(style: .large)
         ai.color = UIColor(red: 0.255, green: 0.561, blue: 0.886, alpha: 1.0)

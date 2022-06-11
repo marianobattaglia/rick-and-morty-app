@@ -21,9 +21,20 @@ class DetalleViewController: UIViewController {
         super.viewDidLoad()
         
         //Image Set up
+        imageContainer.isHidden = true
         imageContainer.setShadowImage(cornerRadius: imagen.frame.width * 0.5, shadowColor: .gray, shadowRadius: 15)
         imagen.circleImage()
         api()
+    }
+    
+    func setupUI() {
+        self.imageContainer.isHidden = false
+        
+        if specie.text == "Alien" {
+            view.backgroundColor = UIColor(red: 204 / 255.0, green: 153 / 255.0, blue: 255 / 255.0, alpha: 1.0)
+        } else {
+            view.backgroundColor = UIColor(red: 210 / 255.0, green: 255 / 255.0, blue: 240 / 255.0, alpha: 1.0)
+        }
     }
         
     func api() {
@@ -46,9 +57,9 @@ class DetalleViewController: UIViewController {
                             self.imagen.image = image
                         }
                     }
+                    self.setupUI()
                     self.removeSpinner()
                 }
-                
 
             case .failure(let error):
                 print(error.localizedDescription)
@@ -57,8 +68,6 @@ class DetalleViewController: UIViewController {
         }
         
     }
-
-
 }
 
 extension UIView {

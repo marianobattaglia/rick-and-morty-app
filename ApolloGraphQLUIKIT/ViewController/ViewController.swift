@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tabla: UITableView!
-    
+        
     var personajes = [PersonajesQuery.Data.Character.Result]()
     
     override func viewDidLoad() {
@@ -30,10 +30,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tabla.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tabla.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomTableViewCell
         let personaje = personajes[indexPath.row]
-        cell.textLabel?.text = personaje.name
-        cell.detailTextLabel?.text = personaje.species
+        cell.titleCell.text = personaje.name
+        cell.subtitleCell.text = personaje.species
+        
+        let tipo = personaje.species
+        switch tipo {
+        case "Alien":
+            cell.imageCell.image = UIImage(systemName: "bonjour")
+            cell.imageCell.tintColor = UIColor(red: 204 / 255.0, green: 153 / 255.0, blue: 255 / 255.0, alpha: 1.0)
+        default:
+            cell.imageCell.image = UIImage(systemName: "globe.americas.fill")
+            cell.imageCell.tintColor = UIColor(red: 210 / 255.0, green: 255 / 255.0, blue: 240 / 255.0, alpha: 1.0)
+        }
         
         return cell
     }

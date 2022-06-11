@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		16C9FBF849507521040CEA5F /* Pods_ApolloGraphQLUIKIT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B154536A32B3F0E9A5B0F95 /* Pods_ApolloGraphQLUIKIT.framework */; };
 		8731BAAB2854E6FA00F9734A /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731BAAA2854E6FA00F9734A /* ViewController+Extension.swift */; };
+		8731BAB12854FD7C00F9734A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731BAB02854FD7C00F9734A /* CustomTableViewCell.swift */; };
 		CF26988D2668552300FFEBD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26988C2668552300FFEBD4 /* AppDelegate.swift */; };
 		CF26988F2668552300FFEBD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26988E2668552300FFEBD4 /* SceneDelegate.swift */; };
 		CF2698912668552300FFEBD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2698902668552300FFEBD4 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		113D67B42765F381CFC72BDD /* Pods-ApolloGraphQLUIKIT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloGraphQLUIKIT.debug.xcconfig"; path = "Target Support Files/Pods-ApolloGraphQLUIKIT/Pods-ApolloGraphQLUIKIT.debug.xcconfig"; sourceTree = "<group>"; };
 		2B154536A32B3F0E9A5B0F95 /* Pods_ApolloGraphQLUIKIT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApolloGraphQLUIKIT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8731BAAA2854E6FA00F9734A /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		8731BAB02854FD7C00F9734A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		CB27E1055A8A42BAF2BA9778 /* Pods-ApolloGraphQLUIKIT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloGraphQLUIKIT.release.xcconfig"; path = "Target Support Files/Pods-ApolloGraphQLUIKIT/Pods-ApolloGraphQLUIKIT.release.xcconfig"; sourceTree = "<group>"; };
 		CF2698892668552300FFEBD4 /* ApolloGraphQLUIKIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApolloGraphQLUIKIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF26988C2668552300FFEBD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				CF2698902668552300FFEBD4 /* ViewController.swift */,
 				CF2698A92668642800FFEBD4 /* DetalleViewController.swift */,
+				8731BAB02854FD7C00F9734A /* CustomTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				CF2698AA2668642800FFEBD4 /* DetalleViewController.swift in Sources */,
 				CF2698912668552300FFEBD4 /* ViewController.swift in Sources */,
+				8731BAB12854FD7C00F9734A /* CustomTableViewCell.swift in Sources */,
 				CF26988D2668552300FFEBD4 /* AppDelegate.swift in Sources */,
 				8731BAAB2854E6FA00F9734A /* ViewController+Extension.swift in Sources */,
 				CF2698A62668592400FFEBD4 /* API.swift in Sources */,
