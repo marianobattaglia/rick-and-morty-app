@@ -17,7 +17,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         tabla.delegate = self
         tabla.dataSource = self
+        setupUI()
         api()
+    }
+    
+    func setupUI() {
+        view.backgroundColor = UIColor(red: 240 / 255.0, green: 255 / 255.0, blue: 250 / 255.0, alpha: 1.0)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,11 +34,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let personaje = personajes[indexPath.row]
         cell.textLabel?.text = personaje.name
         cell.detailTextLabel?.text = personaje.species
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "enviar", sender: self)
+        tableView.deselectRow(at: indexPath, animated: true)
         return
     }
     
@@ -52,6 +59,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func api() {
+        self.showSpinner()
         Network.shared.apollo.fetch(query: PersonajesQuery()) { res in
             switch res {
             case .success(let graphql):
@@ -59,12 +67,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     let personajes = graphql.data?.characters?.results as! [PersonajesQuery.Data.Character.Result]
                     self.personajes.append(contentsOf: personajes)
                     self.tabla.reloadData()
+                    self.removeSpinner()
                 }
                 
             case .failure(let error):
                 print(error.localizedDescription)
+                self.removeSpinner()
             }
-            
         }
     }
 

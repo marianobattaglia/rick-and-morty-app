@@ -80,6 +80,7 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cc2-DJ-Hvn">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <color key="tintColor" systemColor="systemMintColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="JQd-wf-PR7"/>
                                             <constraint firstAttribute="height" constant="150" id="xfn-jn-fPb"/>
@@ -94,32 +95,32 @@
                                     <constraint firstAttribute="height" constant="150" id="xKK-XL-e9V"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p84-k6-HvR">
-                                <rect key="frame" x="160" y="328" width="194" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p84-k6-HvR">
+                                <rect key="frame" x="113" y="328" width="241" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrs-8X-aKt">
-                                <rect key="frame" x="160" y="389" width="194" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrs-8X-aKt">
+                                <rect key="frame" x="113" y="389" width="241" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qn8-4K-zuq">
-                                <rect key="frame" x="160" y="450" width="194" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qn8-4K-zuq">
+                                <rect key="frame" x="113" y="450" width="241" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSs-o8-wAR">
-                                <rect key="frame" x="160" y="511" width="194" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSs-o8-wAR">
+                                <rect key="frame" x="113" y="511" width="241" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMu-A2-joX">
-                                <rect key="frame" x="87" y="328" width="53" height="21"/>
+                                <rect key="frame" x="40" y="328" width="53" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="53" id="s6A-rc-Om8"/>
                                 </constraints>
@@ -128,19 +129,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specie:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWU-03-asb">
-                                <rect key="frame" x="87" y="389" width="61" height="21"/>
+                                <rect key="frame" x="40" y="389" width="61" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaf-Gv-lg8">
-                                <rect key="frame" x="87" y="450" width="66" height="21"/>
+                                <rect key="frame" x="40" y="450" width="66" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ej-cD-iSh">
-                                <rect key="frame" x="87" y="511" width="59" height="21"/>
+                                <rect key="frame" x="40" y="511" width="59" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -172,7 +173,7 @@
                             <constraint firstItem="V83-CU-xyK" firstAttribute="top" secondItem="mYQ-Ls-VbV" secondAttribute="top" constant="40" id="uFf-Qb-XaL"/>
                             <constraint firstItem="V83-CU-xyK" firstAttribute="centerX" secondItem="AQV-Jb-wpx" secondAttribute="centerX" id="vgo-Rj-i1i"/>
                             <constraint firstItem="BWU-03-asb" firstAttribute="leading" secondItem="FMu-A2-joX" secondAttribute="leading" id="wtr-OK-ydh"/>
-                            <constraint firstItem="FMu-A2-joX" firstAttribute="leading" secondItem="mYQ-Ls-VbV" secondAttribute="leading" constant="87" id="yNx-pe-ovg"/>
+                            <constraint firstItem="FMu-A2-joX" firstAttribute="leading" secondItem="mYQ-Ls-VbV" secondAttribute="leading" constant="40" id="yNx-pe-ovg"/>
                             <constraint firstItem="qn8-4K-zuq" firstAttribute="trailing" secondItem="oSs-o8-wAR" secondAttribute="trailing" id="zQw-di-iLC"/>
                         </constraints>
                     </view>
@@ -212,6 +213,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

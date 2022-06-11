@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16C9FBF849507521040CEA5F /* Pods_ApolloGraphQLUIKIT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B154536A32B3F0E9A5B0F95 /* Pods_ApolloGraphQLUIKIT.framework */; };
+		8731BAAB2854E6FA00F9734A /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731BAAA2854E6FA00F9734A /* ViewController+Extension.swift */; };
 		CF26988D2668552300FFEBD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26988C2668552300FFEBD4 /* AppDelegate.swift */; };
 		CF26988F2668552300FFEBD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26988E2668552300FFEBD4 /* SceneDelegate.swift */; };
 		CF2698912668552300FFEBD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2698902668552300FFEBD4 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		113D67B42765F381CFC72BDD /* Pods-ApolloGraphQLUIKIT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloGraphQLUIKIT.debug.xcconfig"; path = "Target Support Files/Pods-ApolloGraphQLUIKIT/Pods-ApolloGraphQLUIKIT.debug.xcconfig"; sourceTree = "<group>"; };
 		2B154536A32B3F0E9A5B0F95 /* Pods_ApolloGraphQLUIKIT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApolloGraphQLUIKIT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8731BAAA2854E6FA00F9734A /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
 		CB27E1055A8A42BAF2BA9778 /* Pods-ApolloGraphQLUIKIT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloGraphQLUIKIT.release.xcconfig"; path = "Target Support Files/Pods-ApolloGraphQLUIKIT/Pods-ApolloGraphQLUIKIT.release.xcconfig"; sourceTree = "<group>"; };
 		CF2698892668552300FFEBD4 /* ApolloGraphQLUIKIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApolloGraphQLUIKIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF26988C2668552300FFEBD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8731BAA62854E68000F9734A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF2698922668552300FFEBD4 /* Main.storyboard */,
+				CF2698972668552600FFEBD4 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8731BAA72854E69200F9734A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF2698902668552300FFEBD4 /* ViewController.swift */,
+				CF2698A92668642800FFEBD4 /* DetalleViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8731BAA82854E6BF00F9734A /* ApolloGraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				CF2698A52668592400FFEBD4 /* API.swift */,
+				CF2698A72668597A00FFEBD4 /* Apollo.swift */,
+				CF2698A2266857E100FFEBD4 /* schema.json */,
+			);
+			path = ApolloGraphQL;
+			sourceTree = "<group>";
+		};
+		8731BAA92854E6E900F9734A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8731BAAA2854E6FA00F9734A /* ViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CF2698802668552300FFEBD4 = {
 			isa = PBXGroup;
 			children = (
@@ -81,18 +119,15 @@
 		CF26988B2668552300FFEBD4 /* ApolloGraphQLUIKIT */ = {
 			isa = PBXGroup;
 			children = (
+				8731BAA92854E6E900F9734A /* Extensions */,
+				8731BAA82854E6BF00F9734A /* ApolloGraphQL */,
+				8731BAA72854E69200F9734A /* ViewController */,
+				8731BAA62854E68000F9734A /* View */,
 				CF26988C2668552300FFEBD4 /* AppDelegate.swift */,
 				CF26988E2668552300FFEBD4 /* SceneDelegate.swift */,
-				CF2698A52668592400FFEBD4 /* API.swift */,
-				CF2698902668552300FFEBD4 /* ViewController.swift */,
-				CF2698A92668642800FFEBD4 /* DetalleViewController.swift */,
-				CF2698922668552300FFEBD4 /* Main.storyboard */,
-				CF2698A2266857E100FFEBD4 /* schema.json */,
 				CF2698952668552600FFEBD4 /* Assets.xcassets */,
-				CF2698972668552600FFEBD4 /* LaunchScreen.storyboard */,
 				CF26989A2668552600FFEBD4 /* Info.plist */,
 				CF2698A0266857BE00FFEBD4 /* consulta.graphql */,
-				CF2698A72668597A00FFEBD4 /* Apollo.swift */,
 			);
 			path = ApolloGraphQLUIKIT;
 			sourceTree = "<group>";
@@ -179,7 +214,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		CF2698A4266857EB00FFEBD4 /* Apollo cli */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -191,7 +226,7 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "SCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
 		};
@@ -244,6 +279,7 @@
 				CF2698AA2668642800FFEBD4 /* DetalleViewController.swift in Sources */,
 				CF2698912668552300FFEBD4 /* ViewController.swift in Sources */,
 				CF26988D2668552300FFEBD4 /* AppDelegate.swift in Sources */,
+				8731BAAB2854E6FA00F9734A /* ViewController+Extension.swift in Sources */,
 				CF2698A62668592400FFEBD4 /* API.swift in Sources */,
 				CF26988F2668552300FFEBD4 /* SceneDelegate.swift in Sources */,
 				CF2698A82668597A00FFEBD4 /* Apollo.swift in Sources */,

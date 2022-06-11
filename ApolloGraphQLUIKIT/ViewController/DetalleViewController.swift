@@ -17,18 +17,17 @@ class DetalleViewController: UIViewController {
     @IBOutlet weak var status: UILabel!
     var idPersonaje: String?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Image Set up
         imageContainer.setShadowImage(cornerRadius: imagen.frame.width * 0.5, shadowColor: .gray, shadowRadius: 15)
         imagen.circleImage()
-        
         api()
     }
-    
+        
     func api() {
+        self.showSpinner()
         Network.shared.apollo.fetch(query: GetPersonajeQuery(id: idPersonaje!)) { res in
             switch res {
             case .success(let graphql):
@@ -47,14 +46,16 @@ class DetalleViewController: UIViewController {
                             self.imagen.image = image
                         }
                     }
+                    self.removeSpinner()
                 }
                 
 
             case .failure(let error):
                 print(error.localizedDescription)
+                self.removeSpinner()
             }
-            
         }
+        
     }
 
 
